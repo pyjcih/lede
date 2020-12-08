@@ -53,7 +53,7 @@ jobs:
       - name: Generate configuration file
         run: make defconfig
 
-      - name: Make download
+      - name: Make download    
         run: |
           make download -j8
           find dl -size -1024c -exec rm -f {} \;
